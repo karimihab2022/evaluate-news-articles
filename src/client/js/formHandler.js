@@ -1,4 +1,3 @@
-// import { checkURL } from "./URLch"
 
 const postData = async (url = '', info = {}) => {
     const response = await fetch(url, {
@@ -26,7 +25,9 @@ function handleSubmit(e) {
         postData("http://localhost:8081/addurl", {urltext}).then(data => {
           document.getElementById('a').innerHTML = `model: ${data.model}`;
           document.getElementById('b').innerHTML = `score-tag: ${data.score_tag}`;
-          document.getElementById('c').innerHTML = `status code: ${data.status.code}`;
+          document.getElementById('c').innerHTML = `status code: ${data.status.code}   , status msg :${data.status.msg}`;
+          document.getElementById("url").value="";
+         
     
         })
     } else {

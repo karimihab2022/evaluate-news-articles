@@ -2,15 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Evalate News Article </title>
+    <title>Evaluate News Article </title>
   </head>
 
   <body>
     <main>
       <div class="">
-        <p>Enter a URL of an article / a blog to discover its sentiment.</p>
+      
         <section>
-          <form class="" onsubmit="return Client.handleSubmit(event)">
+          <header>
+            <p>Enter  URL of any article to evaluate it.</p>
+          </header>
+          
+          <form  onsubmit="return Client.handleSubmit(event)">
               <input id="url" type="text" name="input" value="" placeholder="Enter url">
               <button class="button" type="submit" value="submit" 
               onclick="return Client.handleSubmit(event)"
@@ -19,11 +23,13 @@
           </form>
         </section>
 
-       <section>
-          <strong>Form Results:</strong>
-          <div id="a"></div>
-          <div id="b"></div>
-          <div id="c"></div>
+       <div class="r">
+        <strong>The Evaluation:</strong>
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+       </div>
+          
         
       </div>
     </main>
