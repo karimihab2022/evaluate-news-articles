@@ -33,8 +33,6 @@ start the server
 
 go to http://localhost:8081
 
-**Run tests**
+**enjoy**
 
-To run the tests, run
 
-```npm test```
