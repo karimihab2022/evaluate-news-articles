@@ -1,5 +1,5 @@
 # what is the project?
-Building a web tool that allows users to run NLP on blogs and articles.
+Building a web tool that allows users to evaluate articles.
 
 ## Installation
 
